@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  min-height: calc(100vh - 80px); /* Ensuring content takes full height minus header and footer */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* CSS for Header  */
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  background-color: #4CAF50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* CSS for Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* CSS for Home */
+.home {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* CSS for About */
+.about {
+  padding: 50px 20px;
+  background-color: #e9f7e9;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* CSS for Contact */
+.contact {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 2rem;
+  color: #333;
+}
+.contact p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* CSS for Projects */
+.projects {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.projects h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+}
+.projects p {
+  font-size: 1.1rem;
+  color: #666;
 }
