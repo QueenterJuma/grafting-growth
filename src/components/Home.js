@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
     return (
         <section id="home" className="home">
-            <h1>Welcome to Grafting Growth for the jSociety</h1>
+            <h1>Welcome to Grafting Growth for the Society</h1>
             <p>Positively impacting the society</p>
         </section>
     );
